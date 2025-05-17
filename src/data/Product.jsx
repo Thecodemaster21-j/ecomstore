@@ -25,6 +25,13 @@ const Product = () => {
       description: 'Stylish running shoes',
       imageUrl: ('../public/Hoodie.webp')
     },
+    {
+      id: 4,
+      name: 'Sneakers',
+      price: 80.99,
+      description: 'Comfortable sneakers for everyday wear',
+      imageUrl: ('../public/Shoes.avif')
+    }
   ];
   return (
     <div className="product-list">
