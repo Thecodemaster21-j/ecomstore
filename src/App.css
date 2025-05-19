@@ -15,30 +15,51 @@ body {
   align-items: center;
   background-color: #222;
   padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-logo {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  transition: color 0.3s;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #4caf50;
+  background-color: #4caf50;
+  color: white;
+}
+
+.nav-cta {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-cta:hover {
+  background-color: #388e3c;
 }
 
 .product-list {
@@ -84,4 +105,16 @@ body {
 
 .add-to-cart-btn:hover {
   background-color: #0056b3;
+}
+
+.cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.cart-button:hover {
+  color: #4caf50;
 }
